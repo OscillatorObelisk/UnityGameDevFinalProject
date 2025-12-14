@@ -7,7 +7,7 @@ public class squareGameOver : MonoBehaviour
     {
         if (collision.CompareTag("Enemy"))
         {
-            SceneManager.LoadScene("PunchIn");
+            SceneManager.LoadScene("GameOver");
         }
     }
 }

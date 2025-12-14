@@ -302,8 +302,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 150.91432, y: -103.629745}
-  m_SizeDelta: {x: 222.2711, y: 94.3469}
+  m_AnchoredPosition: {x: 110.431755, y: -49.7855}
+  m_SizeDelta: {x: 220.8635, y: 74.639}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &203424933
 MonoBehaviour:
@@ -318,18 +318,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
+    m_SelectOnRight: {fileID: 668443315}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 0.86415094, g: 0.4668779, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -448,6 +448,9 @@ MonoBehaviour:
   Spawner3: {fileID: 1239166258}
   endPanel: {fileID: 443721982}
   endText: {fileID: 944955931}
+  pauseMenu: {fileID: 1628519541}
+  finished: 0
+  next: {fileID: 203424931}
 --- !u!1 &417888320
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,8 +535,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -108.00812}
-  m_SizeDelta: {x: 603.6573, y: 207.25949}
+  m_AnchoredPosition: {x: -23, y: -49.785}
+  m_SizeDelta: {x: 426.9918, y: 99.571}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &443721984
 MonoBehaviour:
@@ -852,8 +855,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 22
+  m_fontSizeBase: 22
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -940,8 +943,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 452.74298, y: -103.629745}
-  m_SizeDelta: {x: 222.2711, y: 94.3469}
+  m_AnchoredPosition: {x: 338.6856, y: -49.7855}
+  m_SizeDelta: {x: 235.6442, y: 74.6392}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &668443315
 MonoBehaviour:
@@ -956,18 +959,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnLeft: {fileID: 203424933}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 0.86415094, g: 0.4668779, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1187,6 +1190,71 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f97e2c13ce289e349ad33446b414d864, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::squareGameOver
+--- !u!1001 &867475450
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1592072396627517932, guid: 1ec46a53255185a4e811a82f61d32205, type: 3}
+      propertyPath: m_Name
+      value: MusicManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225522005550557981, guid: 1ec46a53255185a4e811a82f61d32205, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.35731
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225522005550557981, guid: 1ec46a53255185a4e811a82f61d32205, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.69549
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225522005550557981, guid: 1ec46a53255185a4e811a82f61d32205, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225522005550557981, guid: 1ec46a53255185a4e811a82f61d32205, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225522005550557981, guid: 1ec46a53255185a4e811a82f61d32205, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225522005550557981, guid: 1ec46a53255185a4e811a82f61d32205, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225522005550557981, guid: 1ec46a53255185a4e811a82f61d32205, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225522005550557981, guid: 1ec46a53255185a4e811a82f61d32205, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225522005550557981, guid: 1ec46a53255185a4e811a82f61d32205, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225522005550557981, guid: 1ec46a53255185a4e811a82f61d32205, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8876560341052948817, guid: 1ec46a53255185a4e811a82f61d32205, type: 3}
+      propertyPath: music
+      value: 
+      objectReference: {fileID: 8300000, guid: 9fca526633c328f46a6fddf9978c5232, type: 3}
+    - target: {fileID: 8876560341052948817, guid: 1ec46a53255185a4e811a82f61d32205, type: 3}
+      propertyPath: level1Music
+      value: 
+      objectReference: {fileID: 8300000, guid: 9fca526633c328f46a6fddf9978c5232, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ec46a53255185a4e811a82f61d32205, type: 3}
 --- !u!1 &944955931
 GameObject:
   m_ObjectHideFlags: 0
@@ -1221,8 +1289,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 206.4549}
-  m_SizeDelta: {x: 285.2696, y: 93.2493}
+  m_AnchoredPosition: {x: -0.0000038147, y: 124}
+  m_SizeDelta: {x: 236.7042, y: 46.328}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &944955933
 MonoBehaviour:
@@ -1323,7 +1391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StarFallSpawner
   star: {fileID: 2946471741226692617, guid: b2d73b993bf713a4eacd6cf50c5d576a, type: 3}
-  spawnInterval: 5
+  spawnInterval: 3
 --- !u!4 &1239166260
 Transform:
   m_ObjectHideFlags: 0
@@ -1388,7 +1456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1417,7 +1485,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -1638,6 +1706,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 417888322}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1628519541 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7269704641529625121, guid: 91371891ef614754fb262c1e7dd89db2, type: 3}
+  m_PrefabInstance: {fileID: 1462136586}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1907533178
 GameObject:
   m_ObjectHideFlags: 0
@@ -1972,3 +2045,4 @@ SceneRoots:
   - {fileID: 1239166260}
   - {fileID: 1318666468}
   - {fileID: 382582429}
+  - {fileID: 867475450}

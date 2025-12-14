@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7569296766068250820}
   - component: {fileID: 8475651133657006327}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: player_pilot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 49
   m_Sprite: {fileID: -2628900165447201885, guid: 40e905130d5e5994dba6a717d4e636d9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -100,7 +100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8255311002352739267}
   - component: {fileID: 7089902398439114484}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spritemask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -194,7 +194,7 @@ GameObject:
   - component: {fileID: 512268501728661350}
   - component: {fileID: 358085602428969736}
   - component: {fileID: 2101728239286011239}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ufoplayer_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -264,7 +264,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 50
   m_Sprite: {fileID: 21300000, guid: c796df6f05949e1418c400e67727c9aa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

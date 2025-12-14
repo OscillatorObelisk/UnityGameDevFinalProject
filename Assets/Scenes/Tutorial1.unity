@@ -153,8 +153,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 217}
-  m_SizeDelta: {x: 1057.9597, y: 233.6856}
+  m_AnchoredPosition: {x: 0, y: 135.09999}
+  m_SizeDelta: {x: 672.1937, y: 105.78}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &269096106
 MonoBehaviour:
@@ -176,9 +176,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hey yo, your friends have been captured and you have to like surf to the
-    island yo that they got captured at yo. good luck. take a surfboard and watch
-    out for mines, sharks, and blue floating things yo.
+  m_text: Hello, your friends have been kidnapped and are being held in a fortress
+    across the sea. Grab a surfboard and go rescue them!  I am also in trouble and
+    i need your help. I'll give you further instructions when you arrive. be sure
+    to watch out for hazards in the ocean on your way there.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4f707bfe1040bf14f9745e423abd92c3, type: 2}
   m_sharedMaterial: {fileID: -5881646184343665750, guid: 4f707bfe1040bf14f9745e423abd92c3, type: 2}
@@ -205,8 +206,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -674,7 +675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -765,8 +766,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -354.13, y: -124.11}
-  m_SizeDelta: {x: 708.24, y: 248.2275}
+  m_AnchoredPosition: {x: -200, y: -102.96}
+  m_SizeDelta: {x: 400, y: 205.93}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1152429477
 MonoBehaviour:
@@ -821,15 +822,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -986,8 +987,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 366, y: -173.55}
-  m_SizeDelta: {x: 434.4586, y: 382.151}
+  m_AnchoredPosition: {x: 254.87, y: -61.86}
+  m_SizeDelta: {x: 290.2544, y: 288.1394}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1334300147
 MonoBehaviour:
@@ -1061,7 +1062,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6, y: 15.907}
+  m_AnchoredPosition: {x: 0.000016212, y: 30.2}
   m_SizeDelta: {x: 643.7467, y: 31.8137}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1448285432
@@ -1111,8 +1112,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1253,6 +1254,75 @@ Transform:
   m_Children: []
   m_Father: {fileID: 365402837}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1643546108
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1592072396627517932, guid: 1ec46a53255185a4e811a82f61d32205, type: 3}
+      propertyPath: m_Name
+      value: MusicManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225522005550557981, guid: 1ec46a53255185a4e811a82f61d32205, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.35731
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225522005550557981, guid: 1ec46a53255185a4e811a82f61d32205, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.69549
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225522005550557981, guid: 1ec46a53255185a4e811a82f61d32205, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225522005550557981, guid: 1ec46a53255185a4e811a82f61d32205, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225522005550557981, guid: 1ec46a53255185a4e811a82f61d32205, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225522005550557981, guid: 1ec46a53255185a4e811a82f61d32205, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225522005550557981, guid: 1ec46a53255185a4e811a82f61d32205, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225522005550557981, guid: 1ec46a53255185a4e811a82f61d32205, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225522005550557981, guid: 1ec46a53255185a4e811a82f61d32205, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225522005550557981, guid: 1ec46a53255185a4e811a82f61d32205, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8876560341052948817, guid: 1ec46a53255185a4e811a82f61d32205, type: 3}
+      propertyPath: music
+      value: 
+      objectReference: {fileID: 8300000, guid: 956e155ce45667745840b148e112d135, type: 3}
+    - target: {fileID: 8876560341052948817, guid: 1ec46a53255185a4e811a82f61d32205, type: 3}
+      propertyPath: startTime
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8876560341052948817, guid: 1ec46a53255185a4e811a82f61d32205, type: 3}
+      propertyPath: level1Music
+      value: 
+      objectReference: {fileID: 8300000, guid: 956e155ce45667745840b148e112d135, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ec46a53255185a4e811a82f61d32205, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1262,3 +1332,4 @@ SceneRoots:
   - {fileID: 1259560006}
   - {fileID: 295330178}
   - {fileID: 365402837}
+  - {fileID: 1643546108}

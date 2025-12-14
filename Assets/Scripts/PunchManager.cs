@@ -1,7 +1,8 @@
+using System.Collections;
 using Unity.Cinemachine;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
-using System.Collections;
 
 public class PunchManager : MonoBehaviour
 {
@@ -13,8 +14,16 @@ public class PunchManager : MonoBehaviour
 
     public GameObject endPanel;
     public GameObject endText;
+    public GameObject pauseMenu;
 
+    public bool finished = false;
 
+    public GameObject next;
+
+    private void Start()
+    {
+        PlayerData.currentLevel = 2;
+    }
     void Awake()
     {
         Instance = this;
@@ -39,9 +48,21 @@ public class PunchManager : MonoBehaviour
 
     private IEnumerator ShowEndPanelDelayed()
     {
-        yield return new WaitForSeconds(8f);
+        Destroy(pauseMenu);
+
+        yield return new WaitForSeconds(6f);
+
+        finished = true;
 
         endPanel.SetActive(true);
         endText.SetActive(true);
+
+        StartCoroutine(SetSelection(next));
+    }
+
+    IEnumerator SetSelection(GameObject button)
+    {
+        yield return null;
+        EventSystem.current.SetSelectedGameObject(button);
     }
 }

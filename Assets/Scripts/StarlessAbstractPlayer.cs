@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class StarlessAbstractPlayer : MonoBehaviour
 {
@@ -7,16 +9,20 @@ public class StarlessAbstractPlayer : MonoBehaviour
     private float inputHorizontal;
     public float movementSpeed = 5f;
 
+    private StarlessAbstractGameManager sagm;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         playerRigidBody = GetComponent<Rigidbody2D>();
+
+        sagm = FindAnyObjectByType<StarlessAbstractGameManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (sagm.finished) return;
     }
 
     private void FixedUpdate()
@@ -42,7 +48,8 @@ public class StarlessAbstractPlayer : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            Destroy(this.gameObject);
+            SceneManager.LoadScene("GameOver");
         }        
     }
+
 }

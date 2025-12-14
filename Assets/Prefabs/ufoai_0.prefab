@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4457043760221679095}
   - component: {fileID: 5794344685736227783}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spritemask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,8 @@ GameObject:
   - component: {fileID: 3551844398410390023}
   - component: {fileID: 7025032427174047616}
   - component: {fileID: 2907414122778627840}
-  m_Layer: 0
+  - component: {fileID: 8551731203340126518}
+  m_Layer: 7
   m_Name: ufoai_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +174,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 48
   m_Sprite: {fileID: 21300000, guid: c796df6f05949e1418c400e67727c9aa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -289,6 +290,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8551731203340126518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5078543104429084554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5a02bf2be896f3488adb8eaf06868ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarlessAbstractAI
+  movementSpeed: 5
+  decisionInterval: 1
 --- !u!1 &5844803045341853473
 GameObject:
   m_ObjectHideFlags: 0
@@ -299,7 +314,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2136152454043679821}
   - component: {fileID: 7438716025617400553}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: player_pilot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -367,7 +382,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 47
   m_Sprite: {fileID: -2628900165447201885, guid: 40e905130d5e5994dba6a717d4e636d9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

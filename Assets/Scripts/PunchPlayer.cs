@@ -9,11 +9,15 @@ public class PunchPlayer : MonoBehaviour
     private float punchTimer = 0f;
     private bool isPunching = false;
 
-    
+    public AudioSource audioSource;
+    public AudioClip punchMissSFX;
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && !isPunching)
+
+        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.JoystickButton0)) && !isPunching)
         {
+            audioSource.PlayOneShot(punchMissSFX);
             //anim.SetTrigger("Punch");
             punchObject.SetActive(true);
             isPunching = true;
@@ -28,6 +32,8 @@ public class PunchPlayer : MonoBehaviour
                 punchObject.SetActive(false);
                 isPunching = false;
             }
+
+            
         }
     }
 }

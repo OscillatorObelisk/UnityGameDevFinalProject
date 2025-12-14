@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 987320426412015383}
   - component: {fileID: 8134111323059550992}
   - component: {fileID: 836301005177832692}
-  m_Layer: 0
+  - component: {fileID: 3369696226077442164}
+  m_Layer: 7
   m_Name: ufoai_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,7 +84,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 42
   m_Sprite: {fileID: 21300000, guid: 0edbeca084b484b4198704658b0114cf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -199,6 +200,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3369696226077442164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2358889047758495244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5a02bf2be896f3488adb8eaf06868ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarlessAbstractAI
+  movementSpeed: 5
+  decisionInterval: 1
 --- !u!1 &7578338623249350836
 GameObject:
   m_ObjectHideFlags: 0
@@ -209,7 +224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5817381614592477733}
   - component: {fileID: 28450212574417097}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spritemask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -299,7 +314,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8902753557377429931}
   - component: {fileID: 6764095740341003837}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: player_pilot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -367,7 +382,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 41
   m_Sprite: {fileID: 4770100751710343615, guid: 13fdff6209b44b64184eb22de91bb755, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

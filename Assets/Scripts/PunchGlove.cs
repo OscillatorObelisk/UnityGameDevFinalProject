@@ -8,10 +8,12 @@ public class PunchGlove : MonoBehaviour
     public int punches = 0;
     public int numOfEnemies = 20;
 
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Enemy"))
         {
+
             Rigidbody2D rb = collision.GetComponent<Rigidbody2D>();
             Vector2 forceDir = punchDirection.normalized;
             rb.AddForce(forceDir * punchForce);
@@ -19,6 +21,7 @@ public class PunchGlove : MonoBehaviour
             Destroy(collision.gameObject, destroyDelay);
 
             punches++;
+
         }
     }
 
