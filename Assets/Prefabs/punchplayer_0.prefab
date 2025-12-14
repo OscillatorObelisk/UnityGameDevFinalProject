@@ -107,7 +107,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da27113996d8d924ea8f8634eaa331f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PunchPlayer
-  anim: {fileID: 0}
   punchObject: {fileID: 6372618623827944712}
   punchDuration: 0.1
   audioSource: {fileID: -1206402880008466081}

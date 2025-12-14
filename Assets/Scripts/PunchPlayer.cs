@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PunchPlayer : MonoBehaviour
 {
-    public Animator anim;
+    //public Animator anim;
     public GameObject punchObject;
     public float punchDuration = 0.2f;
 
@@ -12,13 +12,18 @@ public class PunchPlayer : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip punchMissSFX;
 
+    //void Awake()
+    //{
+    //    anim = GetComponent<Animator>();
+    //}
+
     void Update()
     {
 
         if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.JoystickButton0)) && !isPunching)
         {
             audioSource.PlayOneShot(punchMissSFX);
-            //anim.SetTrigger("Punch");
+            //anim.SetTrigger("punch");
             punchObject.SetActive(true);
             isPunching = true;
             punchTimer = 0f;
